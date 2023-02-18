@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+/* to make all text as unselectable */
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+:root {
+  --montserrat: 'Montserrat', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+  --titlesColor: #fa4a0c;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contentWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.orange {
+  color: var(--titlesColor);
+}
+
+.navWrapp {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  font-family: var(--montserrat);
+  font-weight: 600;
+  flex-flow: row wrap;
+}
+
+.menuItem {
+  margin-left: 115px;
+}
+
+.menuLink {
+  transition: all 0.5s ease;
+}
+
+.menuLink:hover {
+  cursor: pointer;
+  color: var(--titlesColor);
+}
+
+.headerContent {
+  background: url('./../img/header-bg.png');
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--montserrat);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 165px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.headerContent .title {
+  font-family: var(--poppins);
+  font-size: 58px;
+  margin: 15px 0px;
+  line-height: 80px;
+}
+
+.btn-wrapper {
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+.buttonList {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item1 {
+  margin-right: 40px;
+}
+
+.btn {
+  color: #fff;
+  padding: 16px 80px;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 35px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: var(--titlesColor);
+  border: 1px solid var(--titlesColor);
+}
+
+.applicationWork {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 44px;
+  text-align: center;
+}
+
+.phone {
+  height: 500px;
+}
+
+.split {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  vertical-align: middle;
+  align-items: center;
+  font-family: var(--montserrat);
+}
+
+.description {
+  max-width: 570px;
+}
+
+.parTitle {
+  color: var(--titlesColor);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.mainText {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.note {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 38px;
+  color: #737373;
+}
+
+.secondSection {
+  text-align: center;
+  color: #fff;
+  font-family: var(--montserrat);
+  position: relative;
+}
+
+.sectionWrapper {
+  z-index: 1;
+}
+
+.section-bg-image {
+  background-image: url('./../img/section-bg.png');
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+}

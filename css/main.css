@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --montserrat: 'Montserrat', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+
+  --titlesColor: #fa4a0c;
+
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
+}
+
+.montserrat {
+  font-family: var(--montserrat);
+}
+
+.poppins {
+  font-family: var(--poppins);
+}
+
+.boldFont {
+  font-weight: var(--bold);
+}
+
+.semiBoldFont {
+  font-weight: var(--semiBold);
+}
+
+.mediumFont {
+  font-weight: var(--medium);
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navMenu {
+  padding: 40px 0;
+}
+
+.logo {
+  width: 150px;
+  height: 65px;
+}
+
+.linksList {
+  flex-flow: row wrap;
+  width: 500px;
+}
+
+.link {
+  font-size: 16px;
+  transition: all 0.7s ease;
+}
+
+.link:hover {
+  color: var(--titlesColor);
+}
+
+.headerContent {
+  background: no-repeat center / cover url(./../img/header-bg.png);
+
+  color: #fff;
+  text-align: center;
+
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.title {
+  font-size: 58px;
+
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height: 80px;
+}
+
+.slogan {
+  line-height: 48px;
+  margin-bottom: 55px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.rightBtn {
+  margin-left: 20px;
+}
+
+.btn {
+  border: 2px solid #fff;
+  border-radius: 60px;
+  background: none;
+
+  color: #fff;
+  font-size: 24px;
+
+  padding: 16px 60px;
+  transition: 1s all ease;
+}
+
+.btn:hover {
+  background: var(--titlesColor);
+  border: 2px solid var(--titlesColor);
+  cursor: pointer;
+}
+
+.main > .wrapper {
+  padding-top: 50px;
+}
+
+.introduction {
+  font-size: 44px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.firstSection {
+  margin-bottom: 50px;
+}
+
+.secondSection {
+  flex-direction: row-reverse;
+  margin-bottom: 79px;
+}
+
+.instructionHeading {
+  font-size: 24px;
+  line-height: 38px;
+  color: var(--titlesColor);
+}
+
+.instruction {
+  line-height: 57px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #737373;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.thirdSection {
+  background: no-repeat center / cover url(./../img/section-bg.png);
+  color: #fff;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.sectionHeader {
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.download {
+  font-size: 24px;
+  line-height: 38px;
+  margin: 20px 0;
+}
+
+.thirdSection > .btnWrapper {
+  margin-top: 40px;
+}
+
+.appstore {
+  margin-left: 20px;
+}
+
+.footer {
+  padding: 50px 0;
+}
+
+.footerContent {
+  font-size: 12px;
+  font-family: var(--roboto);
+}

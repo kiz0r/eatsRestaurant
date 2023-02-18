@@ -4,110 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- connect.css files -->
+    <!-- connecting .css files -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <!-- connect fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>eats RESTAURANT</title>
+    <title>Eats RESTAURANT</title>
   </head>
   <body>
     <header>
-      <div class="contentWrapper">
-        <nav class="navigationMenu">
-          <img src="./img/logo.svg" alt="logo of company" class="logo" />
-          <ul>
-            <li class="menuItem">
-              <a href="#" class="item">Home</a>
+      <div class="wrapper">
+        <nav class="navMenu flexBox">
+          <img src="./img/logo.svg" alt="Eats RESTAURANT Logo" class="logo" />
+          <ul class="linksList flexBox">
+            <li class="linkItem">
+              <a href="#" class="link montserrat semiBoldFont">Home</a>
             </li>
-            <li class="menuItem">
-              <a href="#" class="item">Product</a>
+            <li class="linkItem">
+              <a href="#" class="link montserrat semiBoldFont">Product</a>
             </li>
-            <li class="menuItem">
-              <a href="#" class="item">Faq</a>
+            <li class="linkItem">
+              <a href="#" class="link montserrat semiBoldFont">Faq</a>
             </li>
-            <li class="menuItem">
-              <a href="#" class="item">Contact</a>
+            <li class="linkItem">
+              <a href="#" class="link montserrat semiBoldFont">Contact</a>
             </li>
           </ul>
         </nav>
-        <div class="headerContent">
-          <div class="header-bg-image"></div>
-          <p class="restaurantApp">Restaurant app</p>
-          <h1 class="title">Why stay hungry when you can order from Eats</h1>
-          <p class="slogan">Order is exchange from hunger</p>
-          <ul class="buttonList">
-            <li class="buttenItem">
-              <a href="#" class="btn">Delivery</a>
-            </li>
-            <li class="buttenItem">
-              <a href="#" class="btn">Menu</a>
-            </li>
-          </ul>
+      </div>
+      <div class="headerContent montserrat boldFont">
+        <h3 class="name mediumFont">Restaurant app</h3>
+        <p class="title poppins boldFont">
+          Why stay hungry <br />
+          when you can order from Eats
+        </p>
+        <h4 class="slogan mediumFont">Order is exchange for hunger</h4>
+        <div class="btnWrapper">
+          <button class="btn montserrat boldFont">Delivery</button>
+          <button class="rightBtn btn montserrat boldFont">Menu</button>
         </div>
       </div>
     </header>
-    <main>
-      <div class="contentWrapper">
-        <section class="firstSection">
-          <h2 class="applicationWork">How the app works</h2>
-          <div class="split">
-            <img
-              src="./img/phone1.png"
-              alt="picture of the application"
-              class="phone1 phone"
-            />
-            <div class="description">
-              <p class="parTitle">Create an account</p>
-              <p class="mainText">
-                Create/login to an existing account to get started
-              </p>
-              <p class="note">
-                An account is created with your email and a desired password
-              </p>
-            </div>
+    <main class="main">
+      <div class="wrapper montserrat">
+        <p class="introduction semiBoldFont">How the app works</p>
+        <div class="firstSection infoBox flexBox">
+          <img src="./img/phone1.png" alt="app screenshot" class="appScreen" />
+          <div class="textBox">
+            <h3 class="instructionHeading boldFont">Create an account</h3>
+            <h2 class="instruction poppins boldFont">
+              Create/login to an existing <br />
+              account to get started
+            </h2>
+            <h4 class="description semiBoldFont">
+              An account is created with your email <br />
+              and a desired password
+            </h4>
           </div>
-          <div class="split">
-            <img
-              src="./img/phone2.png"
-              alt="picture of the application"
-              class="phone2 phone"
-            />
-            <div class="description">
-              <p class="parTitle">Explore varieties</p>
-              <p class="mainText">Shop for your favorites meal as e dey hot.</p>
-              <p class="note">
-                Shop for your favorite meals or drinks and enjoy while doing it.
-              </p>
-            </div>
+        </div>
+        <div class="secondSection infoBox flexBox">
+          <img src="./img/phone2.png" alt="app screenshot" class="appScreen" />
+          <div class="textBox">
+            <h3 class="instructionHeading boldFont">Explore varieties</h3>
+            <h2 class="instruction poppins boldFont">
+              Shop for your favorites <br />
+              meal as e dey hot.
+            </h2>
+            <h4 class="description semiBoldFont">
+              Shop for your favorite meals or drinks <br />
+              and enjoy while doing it.
+            </h4>
           </div>
-        </section>
-        <section class="secondSection">
-          <div class="section-bg-image"></div>
-          <h3 class="orderNow">Order now.</h3>
-          <p class="whereIsAvailible">
-            Available on your favorite store. Start your premium experience now
-          </p>
-          <ul class="buttonList">
-            <li class="buttenItem">
-              <a href="#" class="btn">Playstore</a>
-            </li>
-            <li class="buttenItem">
-              <a href="#" class="btn">Appstore</a>
-            </li>
-          </ul>
-        </section>
+        </div>
+      </div>
+      <div class="thirdSection montserrat">
+        <h2 class="sectionHeader boldFont">Order now.</h2>
+        <h4 class="download mediumFont">
+          Available on your favorite store. Start your premium experience now
+        </h4>
+        <div class="btnWrapper">
+          <button class="btn montserrat boldFont">Playstore</button>
+          <button class="btn rightBtn montserrat boldFont">Appstore</button>
+        </div>
       </div>
     </main>
-    <footer>
-      <div class="contentWrapper">
-        <img src="./img/logo.svg" alt="logo of company" />
-        <p class="copyright">Copyright 2020 Bella Onojie.com</p>
+    <footer class="footer">
+      <div class="wrapper flexBox">
+        <img class="logo" src="./img/logo.svg" alt="company Logo" />
+        <span class="footerContent boldFont"
+          >Copywright 2020 Bella <a href="#" class="footerLink">Onojie.com</a>
+        </span>
       </div>
     </footer>
   </body>
